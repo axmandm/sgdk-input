@@ -1,7 +1,8 @@
-This builds on 5_gameovermusic to allow the game to be restarted if "Start" is pressed on the joypad.
+This builds on https://github.com/axmandm/sgdk-game-music to allow the game to be restarted if "Start" is pressed on the joypad.
 
 Add a function to handle when Start is pressed on JOY_1, or if A is pressed.
 
+```
 void handleJoyEvent(u16 joy, u16 changed, u16 state)
 {
     if (joy == JOY_1)
@@ -18,8 +19,9 @@ void handleJoyEvent(u16 joy, u16 changed, u16 state)
 
     }
 }
+```
 
 Note that we reset the timer also, as otherwise the system will reset with the timer as 0.
 
 Within the main loop, call:
-JOY_setEventHandler(handleJoyEvent);
+`JOY_setEventHandler(handleJoyEvent);`
