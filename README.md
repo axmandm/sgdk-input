@@ -1,5 +1,7 @@
 This builds on https://github.com/axmandm/sgdk-game-music to allow the game to be restarted if "Start" is pressed on the joypad.
 
+Pressing "A" adds 3 seconds to the timer.
+
 Add a function to handle when Start is pressed on JOY_1, or if A is pressed.
 
 ```
