@@ -24,4 +24,5 @@ void handleJoyEvent(u16 joy, u16 changed, u16 state)
 Note that we reset the timer also, as otherwise the system will reset with the timer as 0.
 
 Within the main loop, call:
+
 `JOY_setEventHandler(handleJoyEvent);`
